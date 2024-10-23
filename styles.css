@@ -1,0 +1,102 @@
+/* Arkaplan ve Genel Ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    background-color: #f4e3d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('track-background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #5b7aa5;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #7a8ca3;
+    margin-bottom: 30px;
+}
+
+/* Geri Sayım Alanı */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.countdown div {
+    text-align: center;
+    background-color: #c3dce8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.countdown span {
+    font-size: 2.5rem;
+    color: #5b7aa5;
+}
+
+.countdown p {
+    font-size: 1rem;
+    color: #7a8ca3;
+    margin-top: 5px;
+}
+
+/* Yarış Pisti ve Araba */
+.race-track {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    background-color: #d0d0d0;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #5b7aa5;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.car {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    animation: drive 5s linear infinite;
+}
+
+/* Araba Animasyonu */
+@keyframes drive {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
